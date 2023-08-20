@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+
+
+    <script src=Assets/js/Dastine-Config.js?"></script>
+
+</head>
+<body>
+<form method="post" action="./" id="form1" enctype="multipart/form-data">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKMTIxMzQ0MTc2MQ9kFgICAw8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkF96P5BSwQyqVhk7tMFslBNbNFdF6RAbX0QeEHOhaBM0="/>
+    </div>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BF6587F4"/>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEdABLUmwWO0awvGnhvx/1NvFwyU1ADmtK9A4OZeL/igbkrX72caujYAhPQntDqBdRWoYWfSgm2YrO9Sko7J9rTtCoSHbyZ5A3dOk2uL0T9VJj1JKm0DJ+xWifcIeVYpQcsH9CTfw9cZ3l6Etz05S7eVFZe3fNluCZY7Btk1/l5w2PTq+4528Znm80prrri1tKmwAor3hc/xAvigyY9RazHhx/NmH7EjselU3EY1/iNAiVu01egIuoDCJKaVOPueDJ1OlxG49X7dQb8ldcK55B61zDUG0zARIWYTyUA79DYRCz27SSupTubd7Omr/rlGMMlyhzmj+u6brF7EyrMILcJyJhFvAEIU2bAqKx65X+YrZvq2Wj3/M5Ro2jaobx6otJ1hnUtHt2yBVa3JvuELhC0LBz8IHCqgPOzdUHz+2dEsxMOyA=="/>
+    </div>
+    <div>
+
+
+        <style type="text/css">
+            .style1 {
+                width: 151px;
+            }
+        </style>
+
+
+        <script src="Assets/js/Dastine.js"></script>
+
+
+        <script type="text/javascript">
+            //Dastine.SetTokenInsertEvent();
+            function TokenRemoveHandler() {
+                alert("Token removed!");
+                Dastine.Reset();
+
+                document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "";
+                document.getElementById('ShowOnline5_txtSelectCertificate').value = "Not Selected.";
+            }
+        </script>
+
+        <script type="text/javascript">
+
+
+            /*window.onload = function(){
+               //alert(Dastine.isInstalled);
+               if (Dastine.isInstalled) 
+               {
+               
+                   Dastine.GetVersion(function (event) {
+                       document.getElementById('ShowOnline5_Label9').innerHTML = "Version: " + event.data.Result;
+                   });
+               }
+           };*/
+
+            function myFunction() {
+                //alert(Dastine.isInstalled);
+                if (Dastine.isInstalled) {
+
+                    Dastine.GetVersion(function (event) {
+                        document.getElementById('ShowOnline5_Label9').innerHTML = "Version: " + event.data.Result;
+                    });
+                }
+            }
+
+            setTimeout(myFunction, 1000);
+
+            /*window.addEventListener("load", function(){
+            if (document.readyState == 'complete') {
+                alert(Dastine.isInstalled);
+                 if (Dastine.isInstalled) {
+                     try {
+    
+                     }
+                     catch (e) {
+                         alert(e);
+                     }
+                 } else {
+                     if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                         alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                     else
+                         alert(Dastine.errorMessage);
+                 }
+             }
+            });*/
+
+        </script>
+
+
+        <script type="text/JavaScript" src="Assets/js/jquery.min.js"></script>
+        <table align="center" cellpadding="5" cellspacing="0" dir="ltr"
+               border="0">
+            <tr>
+                <td>
+                    <img id="ShowOnline5_Image1" src="Assets/Images/image001_.jpg" style="height:98px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="Red">
+                    &nbsp;
+                    <span id="ShowOnline5_Label9" style="color:White;">Version : </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--
+                <span id="ShowOnline5_Label10" style="color:White;">Link to : </span>
+                <a id="ShowOnline5_HyperLink2" href="DastineDemo.aspx" style="color:White;">Dastine3</a>&nbsp;&nbsp;&nbsp;
+                <a id="ShowOnline5_HyperLink3" href="DastineDemo4.aspx" style="color:White;">Dastine4</a>&nbsp;&nbsp;&nbsp;
+                    -->
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <span id="ShowOnline5_Label5"
+                          style="color:Black;font-family:Times New Roman;font-size:Small;font-weight:bold;">Compatible: IE>10 ,  Firefox , Chrome , Edge , Opera</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        id="ShowOnline5_Label57">First you have to install : </span>
+                    &nbsp;
+                    <a id="ShowOnline5_HyperLink1" href="https://pki.co.ir/download/Dastine/5/DastineInstaller.msi">DastineInstaller.msi</a>
+                    <br/>
+                    <span id="ShowOnline5_Label58">Also you can download Dastine for Android : </span>
+                    <a id="ShowOnline5_HyperLink4" href="https://pki.co.ir/download/mkeyone/mkeyone.apk">Dastine.apk</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="Div4" style="padding: 5px; border: 2px solid #C0C0C0; ">
+                        <table align="center" cellpadding="5" cellspacing="0" dir="ltr"
+                               border="0" width="100%">
+
+                            <tr>
+                                <td colspan="2" class="style5">
+                                    <span id="ShowOnline5_Label53"
+                                          style="color:Red;font-family:Times New Roman;font-size:X-Large;font-weight:bold;">Select Certificate</span>
+                                </td>
+                                <td>
+
+                                    <input type="hidden" name="ShowOnline5$lblSelectCertificateResult"
+                                           id="ShowOnline5_lblSelectCertificateResult"/>
+
+                                    <input type="hidden" name="ShowOnline5$hdnP12Holder" id="ShowOnline5_hdnP12Holder"/>
+                                    <input type="hidden" name="ShowOnline5$hdnCertificateHolder"
+                                           id="ShowOnline5_hdnCertificateHolder"/>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td width="100px" class="style3">
+                                    <span id="ShowOnline5_Label4"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">CertificateStore:</span>
+                                </td>
+                                <td width="150px" class="style3" valign="middle">
+
+                                    <select id="txtSelectCertificateCertificateStore"
+                                            onchange="SelectCertificateCertificateStore_change()" class="form-control"
+                                            name="D1">
+                                        <option value="1">Windows</option>
+                                        <option value="2">Token/Smart Card</option>
+                                        <option value="3">File</option>
+
+                                    </select></td>
+                                <td width="100px" class="style3">
+                                    <input type="file" name="ShowOnline5$FileUpload1" id="ShowOnline5_FileUpload1"
+                                           disabled="disabled" class="aspNetDisabled"
+                                           onchange="SaveState();this.form.submit();" style="width:90px;"/>
+                                </td>
+                                <td width="150px" class="style3" valign="middle">
+
+                                    <span id="ShowOnline5_lblFileStatus"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ShowOnline5_Label6"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">SelectingMode:</span>
+                                </td>
+                                <td>
+
+                                    <select id="txtSelectCertificateSelectingMode"
+                                            onchange="txtSelectCertificateSelectingMode_change()" class="form-control"
+                                            name="D2">
+                                        <option value="1">Manual</option>
+                                        <option value="2">Automatic</option>
+
+                                    </select></td>
+                                <td>
+                                    <span id="ShowOnline5_Label47"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Subject:</span>
+                                </td>
+                                <td>
+                                    <input name="ShowOnline5$txtSelectCertificateSubject" type="text" value="SubjectDN"
+                                           id="ShowOnline5_txtSelectCertificateSubject" disabled="disabled"
+                                           class="aspNetDisabled" class="form-control" style="width:160px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="chkSelectCertificateIssuer" type="checkbox" data-bind="checked: agreed"
+                                           onclick="    return chkSelectCertificateIssuer_onclick()"/><span
+                                        id="ShowOnline5_Label42"
+                                        style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Issuer:</span>
+                                </td>
+                                <td>
+
+                                    <input id="txtSelectCertificateIssuer" type="text" class="form-control"
+                                           value="IssuerDN" disabled="disabled"/></td>
+                                <td rowspan="2">
+                                    <label><input id="chkSelectCertificateKeyUsages" type="checkbox"
+                                                  data-bind="checked: agreed"
+                                                  onclick="    return chkSelectCertificateKeyUsages_onclick()"/></label><span
+                                        id="ShowOnline5_Label49"
+                                        style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">KeyUsage/ EnhancedKeyUsage:</span>
+                                </td>
+                                <td rowspan="2">
+                                    <select id="optSelectCertificateKeyUsages" multiple="multiple"
+                                            data-placeholder="Select Keyusage..."
+                                            class="form-control" disabled="disabled" name="D3">
+                                        <option>Digital_Signature</option>
+                                        <option>Non_repudiation</option>
+                                        <option>Key_encipherment</option>
+                                        <option>Data_encipherment</option>
+                                        <option>Key_agreement</option>
+                                        <option>Client_Authentication</option>
+                                        <option>Email_Protection</option>
+                                        <option>SSH_Client</option>
+                                        <option> MS_SmartCard_Logon</option>
+                                        <option>MS_Document_Signing</option>
+                                        <option>PDF_Signing</option>
+
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <span id="ShowOnline5_Label40"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Password:</span>
+                                </td>
+                                <td>
+                                    <input name="ShowOnline5$txtSelectCertificateFilePassword" type="text"
+                                           value="Password" id="ShowOnline5_txtSelectCertificateFilePassword"
+                                           disabled="disabled" class="aspNetDisabled" class="form-control"/>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ShowOnline5_Label50"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Certificate: </span>
+                                </td>
+                                <td>
+                                    <input name="ShowOnline5$txtSelectCertificate" type="text" value="Not Selected"
+                                           id="ShowOnline5_txtSelectCertificate" class="form-control"/>
+                                </td>
+                                <td align="left">
+                                    <span id="ShowOnline5_lblSelectCertificateResult0"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                </td>
+                                <td align="left">
+                                    <input type="submit" name="ShowOnline5$btnSelectCertificate"
+                                           value="Select Certificate"
+                                           onclick="try{btnSelectCertificate()}catch(e){alert(e)}; return false;"
+                                           id="ShowOnline5_btnSelectCertificate" class="btn btn-two"
+                                           style="width:160px;"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="Div3" style="padding: 5px; border: 2px solid #C0C0C0;">
+                        <table align="center" cellpadding="5" cellspacing="0" dir="ltr"
+                               border="0" width="100%">
+                            <tr>
+                                <td colspan="2" class="style5">
+                                    <span id="ShowOnline5_Label2"
+                                          style="color:Red;font-family:Times New Roman;font-size:X-Large;font-weight:bold;">Digital Signature</span>
+                                    <input type="hidden" name="ShowOnline5$hdnSignConfigHolder"
+                                           id="ShowOnline5_hdnSignConfigHolder"/>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td width="100px" class="style3">
+                                    <span id="ShowOnline5_Label54"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Message:</span>
+                                </td>
+                                <td width="150px" class="style3" valign="middle">
+                                    <input name="ShowOnline5$txtSignMessage" type="text" id="ShowOnline5_txtSignMessage"
+                                           class="form-control"/></td>
+                                <td width="100px" class="style3">
+                                    <span id="ShowOnline5_Label55"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">SigningMode:</span>
+                                </td>
+                                <td width="150px" class="style3" valign="middle">
+
+                                    <select id="drpSignSigningMode"
+                                            onchange="drpSignSigningMode_change()" class="form-control" name="D4">
+                                        <option value="1">PKCS#1</option>
+                                        <option value="2">PKCS#7(CMS)</option>
+
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="ShowOnline5_Label56"
+                                          style="color:Black;font-family:Arial;font-size:Small;">HashAlgorithm:</span>
+                                </td>
+                                <td>
+
+                                    <select id="drpSignHashAlgorithm" class="form-control"
+                                            name="D5">
+                                        <option value="1">SHA1</option>
+                                        <option value="2">SHA256</option>
+
+                                    </select></td>
+                                <td>
+                                    <span id="ShowOnline5_Label7"
+                                          style="color:Black;font-family:Arial;font-size:Small;">MessageAttachment:</span>
+                                </td>
+                                <td>
+
+                                    <select id="drpSignMessageAttachment" class="form-control"
+                                            disabled="disabled" name="D6">
+                                        <option value="1">Attached</option>
+                                        <option value="2">Detached</option>
+
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="btnSign" class="btn btn-two" value=" Digital Sign " type="button"
+                                           onclick="try{btnSign_click()}catch(e){alert(e)}" style="width: 120px"/></td>
+                                <td>
+                                    <input name="ShowOnline5$txtSignSignature" type="text"
+                                           id="ShowOnline5_txtSignSignature" class="form-control"/></td>
+                                <td>
+                                    <input type="submit" name="ShowOnline5$btnVerify" value="      Verify      "
+                                           onclick="try{btnVerify_ClientClick()}catch(e){alert(e)};return false;"
+                                           id="ShowOnline5_btnVerify" style="width:120px;"/>
+                                </td>
+                                <td>
+                                    <span id="ShowOnline5_lblSignResult"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                    <span id="ShowOnline5_lblVerifyResult"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="Div1" style="padding: 5px; border: 2px solid #C0C0C0; ">
+                        <table align="center" cellpadding="5" cellspacing="0" dir="ltr"
+                               border="0" width="100%">
+                            <tr>
+                                <td colspan="2" class="style5">
+                                    <span id="ShowOnline5_Label1"
+                                          style="color:Red;font-family:Times New Roman;font-size:X-Large;font-weight:bold;">Encryption</span>
+                                </td>
+                                <td>
+
+
+                                    <input type="hidden" name="ShowOnline5$CmsEncryptCertificate"
+                                           id="ShowOnline5_CmsEncryptCertificate"/>
+
+
+                                </td>
+                                <td>
+
+
+                                    <input type="hidden" name="ShowOnline5$hdnStateHolder"
+                                           id="ShowOnline5_hdnStateHolder"/>
+
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td width="100px" class="style3">
+                                    <span id="ShowOnline5_Label3"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Message:</span>
+                                </td>
+                                <td class="style1" valign="middle">
+                                    <input name="ShowOnline5$txtEncryptMessage" type="text"
+                                           id="ShowOnline5_txtEncryptMessage" class="form-control"/></td>
+                                <td width="100px" class="style3">
+                                    <span id="ShowOnline5_Label8"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Encryption Mode:</span>
+                                </td>
+                                <td width="150px" class="style3" valign="middle">
+
+                                    <select id="drpEncryptEncryptionMode" class="form-control"
+                                            name="D7">
+                                        <option value="2">PKCS#7(CMS)</option>
+
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>
+
+
+                                    <input type="submit" name="ShowOnline5$btnEncrypt" value="Encrypt"
+                                           onclick="try{btnEncryptSelectCertificate()}catch(e){alert(e)}; return false;"
+                                           id="ShowOnline5_btnEncrypt" style="width:120px;"/>
+
+
+                                </td>
+                                <td class="style1">
+
+
+                                    <span id="ShowOnline5_Label11"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Encrypted Value:</span>
+
+
+                                </td>
+                                <td>
+                                    <input name="ShowOnline5$txtEncryptValue" type="text"
+                                           id="ShowOnline5_txtEncryptValue" class="form-control"/></td>
+                                <td>
+                                    <span id="ShowOnline5_lblEncryptResult"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="btnDecrypt" value="Decrypt" type="button"
+                                           onclick="try{btnDecrypt_click()}catch(e){alert(e)}" style="width: 120px"/>
+                                </td>
+                                <td class="style1">
+                                    <span id="ShowOnline5_Label13"
+                                          style="color:Black;font-family:Arial;font-size:Small;font-style:normal;">Decrypted Value:</span>
+                                </td>
+                                <td>
+                                    <input name="ShowOnline5$txtDecryptValue" type="text"
+                                           id="ShowOnline5_txtDecryptValue" class="form-control"/></td>
+                                <td>
+
+                                    <span id="ShowOnline5_lblDecryptResult"
+                                          style="color:Green;font-family:Arial;font-size:Small;"></span>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <span id="ShowOnline5_Labe369">For more information about classes and methods of Dastine : </span>
+                    &nbsp;<a id="ShowOnline5_HyperLink13" href="http://dastine.pki.co.ir/doxygen/index.html">Dastine
+                    Documentation</a>
+
+
+                </td>
+
+            </tr>
+
+        </table>
+
+
+        <script>
+            function parseCertAtServer(certificate) {
+                console.log(certificate);
+                $.ajax({
+                    type: "POST",
+                    url: 'Services.asmx/btnSelectCertificate_Click',
+                    data: "{'Certificate':'" + certificate + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        document.getElementById('ShowOnline5_txtSelectCertificate').value = msg.d;
+                    },
+                    error: function (e) {
+                        if (!alert(e.responseText)) {
+                        }
+                    }
+                });
+            }
+
+            function verifySignature(signConfig, signature, message) {
+                $.ajax({
+                    type: "POST",
+                    url: 'Services.asmx/btnVerify_Click',
+                    data: "{'signConfig':'" + signConfig + "','signature':'" + signature + "','message':'" + message + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        document.getElementById('ShowOnline5_lblVerifyResult').innerHTML = msg.d;
+                        if (msg.d == "Signature Verified")
+                            document.getElementById('ShowOnline5_lblVerifyResult').style.color = "Green";
+                        else
+                            document.getElementById('ShowOnline5_lblVerifyResult').style.color = "Red";
+                    },
+                    error: function (e) {
+                        if (!alert(e.responseText)) {
+                        }
+                    }
+                });
+            }
+
+            function encryptMessage(certificate, message) {
+                $.ajax({
+                    type: "POST",
+                    url: 'Services.asmx/CmsEncrypt_Click',
+                    data: "{'certificate':'" + certificate + "','message':'" + message + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.d == "") {
+                            document.getElementById('ShowOnline5_lblEncryptResult').innerHTML = "Message Not Encrypted";
+                            document.getElementById('ShowOnline5_lblEncryptResult').style.color = "Red";
+                        } else {
+                            document.getElementById('ShowOnline5_txtEncryptValue').value = msg.d;
+                            document.getElementById('ShowOnline5_lblEncryptResult').innerHTML = "Message Encrypted";
+                            document.getElementById('ShowOnline5_lblEncryptResult').style.color = "Green";
+                        }
+                    },
+                    error: function (e) {
+                        if (!alert(e.responseText)) {
+                        }
+                    }
+                });
+            }
+
+            function btnSelectCertificate() {
+                SaveState();
+                if (Dastine.isInstalled) {
+                    // Dastine.Reset();
+                    Dastine.Reset(function (event) {
+
+                        let result = "";
+                        let selectedIndexCertificateStore = document.getElementById('txtSelectCertificateCertificateStore').value;
+
+                        let selectedIndexSelectingMode = document.getElementById('txtSelectCertificateSelectingMode').value;
+
+                        let textSelectCertificateSubject = document.getElementById('ShowOnline5_txtSelectCertificateSubject').value;
+                        if (textSelectCertificateSubject == "SubjectDN")
+                            textSelectCertificateSubject = "";
+                        let textSelectCertificateIssuer = document.getElementById('txtSelectCertificateIssuer').value;
+                        if (textSelectCertificateIssuer == "IssuerDN")
+                            textSelectCertificateIssuer = "";
+
+                        let optSelectCertificateKeyUsages = document.getElementById('optSelectCertificateKeyUsages');
+                        let textSelectCertificateKeyUsages = "";
+                        //if (chkSelectCertificateKeyUsages.checked)
+                        if (document.getElementById('chkSelectCertificateKeyUsages').checked)
+                            if (optSelectCertificateKeyUsages != null)
+                                for (i = 0; i < optSelectCertificateKeyUsages.options.length; i++) {
+                                    let opt = optSelectCertificateKeyUsages.options[i];
+                                    if (opt.selected) {
+                                        textSelectCertificateKeyUsages += opt.value;
+                                        textSelectCertificateKeyUsages += "&";
+                                    }
+                                }
+                        
+                        switch (selectedIndexCertificateStore) {
+                            case "1":
+                                switch (selectedIndexSelectingMode) {
+                                    case "1":
+                                        Dastine.SelectCertificateFromWindowsByUI(textSelectCertificateIssuer, textSelectCertificateKeyUsages, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    //document.getElementById('ShowOnline5_lblSelectCertificateResult').value = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "18":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Canceled By User.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                            }
+                                        });
+                                        break;
+
+                                    case "2":
+                                        Dastine.SelectCertificateFromWindowsBySubject(textSelectCertificateSubject, textSelectCertificateIssuer, textSelectCertificateKeyUsages, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "22":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "SubjectDn Not In Correct Format.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "23":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Found.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                            }
+                                        });
+                                        break;
+                                }
+                                break;
+                            case "2":
+                                switch (selectedIndexSelectingMode) {
+                                    case "1":
+                                        Dastine.SelectCertificateFromTokenByUI(textSelectCertificateIssuer, textSelectCertificateKeyUsages, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    //Dastine.SetTokenRemoveEvent();
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "23":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Found.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "24":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error Checking Hardware Info.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "18":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Canceled By User.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "25":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "No Hardware Token Connected .";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                            }
+                                        });
+                                        break;
+                                    case "2":
+                                        Dastine.SelectCertificateFromTokenBySubject(textSelectCertificateSubject, textSelectCertificateIssuer, textSelectCertificateKeyUsages, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    //Dastine.SetTokenRemoveEvent();
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "22":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "SubjectDn Not In Correct Format.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "23":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Found.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "24":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error Checking Hardware Info.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "21":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                            }
+                                        });
+                                        break;
+                                }
+                                break;
+                            case "3":
+                                let password = document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').value;
+                                let fileValue = document.getElementById('ShowOnline5_hdnP12Holder').value;
+                                if (fileValue == "") {
+                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "No File Selected.";
+                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                    break;
+                                }
+                                if (password == "") {
+                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Please Enter The Password.";
+                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                    break;
+                                }
+                                switch (selectedIndexSelectingMode) {
+                                    case "1":
+                                        Dastine.SelectCertificateFromFileByUI(textSelectCertificateIssuer, textSelectCertificateKeyUsages, fileValue, password, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "18":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Canceled By User.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "26":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Wrong Password.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "27":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "File Corrupt.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+
+                                            }
+                                        });
+                                        break;
+                                    case "2":
+                                        Dastine.SelectCertificateFromFileBySubject(textSelectCertificateSubject, textSelectCertificateIssuer, textSelectCertificateKeyUsages, fileValue, password, function (event) {
+                                            result = event.data.Result;
+                                            switch (result) {
+                                                case "0":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Green";
+                                                    Dastine.GetSelectedCertificate(function (event) {
+                                                        document.getElementById('ShowOnline5_hdnCertificateHolder').value = event.data.Result;
+                                                        parseCertAtServer(event.data.Result);
+                                                    });
+                                                    break;
+                                                case "20":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Unable To Open Store.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "22":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "SubjectDn Not In Correct Format.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "23":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Found.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "24":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Error Checking Hardware Info.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "21":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Certificate Not Selected.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "26":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Wrong Password.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "27":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "File Corrupt.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                case "80":
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "Invalid Config.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                                default:
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').innerHTML = "General Error.";
+                                                    document.getElementById('ShowOnline5_lblSelectCertificateResult0').style.color = "Red";
+                                                    break;
+                                            }
+                                        });
+                                        break;
+                                }
+                                break;
+
+                        }
+                    });
+                } else {
+                    if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                        alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                    else
+                        alert(Dastine.errorMessage);
+                }
+            }
+
+            function btnSign_click() {
+                SaveState();
+                if (Dastine.isInstalled) {
+                    document.getElementById('ShowOnline5_lblVerifyResult').innerHTML = "";
+
+                    let result = "";
+                    let selectedIndexSignSigningMode = document.getElementById('drpSignSigningMode').value;
+
+                    let selectedIndexSignHashAlgorithm = document.getElementById('drpSignHashAlgorithm').value;
+
+                    let selectedIndexSignMessageAttachment = document.getElementById('drpSignMessageAttachment').value;
+
+                    let textSignMessage = document.getElementById('ShowOnline5_txtSignMessage').value;
+
+
+                    switch (selectedIndexSignSigningMode) {
+                        case "1":
+                            if (selectedIndexSignHashAlgorithm == "2") {
+                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Not Supported.";
+                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                return;
+                            }
+                            Dastine.UnicodeToBase64(textSignMessage, function (event) {
+
+                                let b64SignMessage = event.data.Result;
+                                Dastine.Sign(b64SignMessage, "SHA1", function (event) {
+                                    result = event.data.Result;
+                                    if (result.length > 2) {
+                                        document.getElementById('ShowOnline5_txtSignSignature').value = result;
+                                        document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Signed Successfully.";
+                                        document.getElementById('ShowOnline5_lblSignResult').style.color = "Green";
+
+
+                                    } else {
+                                        switch (result) {
+                                            case "30":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "No Private Key.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "12":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Hash Algorithm Not Supported.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "14":
+                                            case "91":
+                                            case "92":
+                                            case "93":
+                                            case "94":
+                                            case "95":
+                                            case "96":
+                                            case "97":
+                                            case "98":
+                                            case "99":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Wrong Password.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "29":
+                                            case "90":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "PIN Blocked.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "31":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Can not Generate Hash.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                            case "32":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Can not Generate Signature.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "33":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Can not Release Context.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                            case "11":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Certificate Not Selected.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "34":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Input Not In B64 Format.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "80":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Invalid Config.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            default:
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "General Error.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                break;
+                                        }
+                                    }
+                                });
+                            });
+                            break;
+                        case "2":
+                            Dastine.UnicodeToBase64(textSignMessage, function (event) {
+                                let b64SignMessage = event.data.Result;
+                                let attach = false;
+                                if (selectedIndexSignMessageAttachment == 1)
+                                    attach = true;
+                                else
+                                    attach = false;
+
+                                Dastine.CmsSign(b64SignMessage, attach, function (event) {
+                                    result = event.data.Result;
+                                    if (result.length > 2) {
+                                        document.getElementById('ShowOnline5_txtSignSignature').value = result;
+                                        document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Signed Successfully.";
+                                        document.getElementById('ShowOnline5_lblSignResult').style.color = "Green";
+
+                                    } else {
+                                        switch (result) {
+                                            case "56":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "CMS Sign Error.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "11":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Certificate Not Selected.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "14":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Wrong Password.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "55":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Input Not In B64 Format.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "30":
+                                            case "57":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "No PrivateKey.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            case "80":
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "Invalid Config.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtSignSignature').value = "";
+                                                break;
+                                            default:
+                                                document.getElementById('ShowOnline5_lblSignResult').innerHTML = "General Error.";
+                                                document.getElementById('ShowOnline5_lblSignResult').style.color = "Red";
+                                                break;
+                                        }
+                                    }
+                                });
+                            });
+                            break;
+                    }
+                } else {
+                    if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                        alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                    else
+                        alert(Dastine.errorMessage);
+                }
+            }
+
+            function SelectCertificateCertificateStore_change() {
+                let value = document.getElementById('txtSelectCertificateCertificateStore').value;
+                if (value == "1" || value == "2") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').disabled = true;
+                    document.getElementById('ShowOnline5_FileUpload1').disabled = true;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').value = "Password";
+
+                } else if (value == "3") {
+                    document.getElementById('ShowOnline5_FileUpload1').disabled = false;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').disabled = false;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').value = "";
+
+                }
+            }
+
+            function txtSelectCertificateSelectingMode_change() {
+                let value = document.getElementById('txtSelectCertificateSelectingMode').value;
+                if (value == "1") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').disabled = true;
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').value = "SubjectDN";
+                } else if (value == "2") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').disabled = false;
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').value = "";
+
+                }
+            }
+
+            function drpSignSigningMode_change() {
+                let value = document.getElementById('drpSignSigningMode').value;
+                if (value == "1") {
+                    document.getElementById('drpSignMessageAttachment').disabled = true;
+                } else if (value == "2") {
+                    document.getElementById('drpSignMessageAttachment').disabled = false;
+                }
+            }
+
+            function btnDecrypt_click() {
+                SaveState();
+                if (Dastine.isInstalled) {
+                    let result = "";
+                    let selectedIndexEncryptEncryptionMode = document.getElementById('drpEncryptEncryptionMode').value;
+                    let textEncryptValue = document.getElementById('ShowOnline5_txtEncryptValue').value;
+                    switch (selectedIndexEncryptEncryptionMode) {
+                        case "2":
+                            let result = -1;
+                            if (textEncryptValue.indexOf(' ') >= 0) {
+                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Wrong Input.";
+                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                return;
+                            }
+                            try {
+                                Dastine.CmsDecrypt(textEncryptValue, function (event) {
+                                    result = event.data.Result;
+                                    if (result.length > 2) {
+                                        Dastine.Base64ToUnicode(result, function (event) {
+                                            result = event.data.Result;
+                                            document.getElementById('ShowOnline5_txtDecryptValue').value = result;
+                                            document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Decrypted Successfully.";
+                                            document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Green";
+                                        });
+                                    } else {
+                                        switch (result) {
+                                            case "59":
+                                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Problem In Opening The Store";
+                                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                                break;
+                                            case "58":
+                                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Input Cipher Not In Base64 Format";
+                                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                                break;
+                                            case "60":
+                                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Problem In Decrypt";
+                                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                                break;
+                                            case "34":
+                                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Input Not Base64";
+                                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                                break;
+                                            case "80":
+                                                document.getElementById('ShowOnline5_lblDecryptResult').innerHTML = "Invalid Config";
+                                                document.getElementById('ShowOnline5_lblDecryptResult').style.color = "Red";
+                                                document.getElementById('ShowOnline5_txtDecryptValue').value = "";
+                                                break;
+                                        }
+                                    }
+                                });
+                            } catch (e) {
+                                alert(e);
+                            }
+
+                            break;
+                    }
+                } else {
+                    if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                        alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                    else
+                        alert(Dastine.errorMessage);
+                }
+            }
+
+
+            function chkSelectCertificateKeyUsages_onclick() {
+                let checked = document.getElementById('chkSelectCertificateKeyUsages').checked;
+                if (checked) {
+                    document.getElementById('optSelectCertificateKeyUsages').disabled = false;
+                } else {
+                    document.getElementById('optSelectCertificateKeyUsages').disabled = true;
+                }
+
+            }
+
+            function chkSelectCertificateIssuer_onclick() {
+                let checked = document.getElementById('chkSelectCertificateIssuer').checked;
+                if (checked) {
+                    document.getElementById('txtSelectCertificateIssuer').disabled = false;
+                    document.getElementById('txtSelectCertificateIssuer').value = "";
+                } else {
+                    document.getElementById('txtSelectCertificateIssuer').value = "IssuerDN";
+                    document.getElementById('txtSelectCertificateIssuer').disabled = true;
+                }
+            }
+
+            function btnVerify_ClientClick() {
+
+                SaveState();
+                if (Dastine.isInstalled) {
+                    document.getElementById('ShowOnline5_lblSignResult').innerHTML = "";
+                    let selectedIndexSignSigningMode = document.getElementById('drpSignSigningMode').value;
+
+                    let selectedIndexSignHashAlgorithm = document.getElementById('drpSignHashAlgorithm').value;
+
+                    let selectedIndexSignMessageAttachment = document.getElementById('drpSignMessageAttachment').value;
+                    let certificate = "";
+                    Dastine.GetSelectedCertificate(function (event) {
+                        certificate = event.data.Result;
+                        Dastine.UnicodeToBase64(document.getElementById('ShowOnline5_txtSignMessage').value, function (event) {
+                            let b64SignMessage = event.data.Result;
+                            let signConfig = selectedIndexSignSigningMode + "&" + selectedIndexSignHashAlgorithm + "&" + selectedIndexSignMessageAttachment + "&" + certificate;
+                            verifySignature(signConfig, document.getElementById('ShowOnline5_txtSignSignature').value, b64SignMessage);
+
+                        });
+                    });
+                } else {
+                    if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                        alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                    else
+                        alert(Dastine.errorMessage);
+                }
+            }
+
+            function btnEncryptSelectCertificate() {
+                SaveState();
+                if (Dastine.isInstalled) {
+                    let result = "";
+                    let selectedIndexEncryptEncryptionMode = document.getElementById('drpEncryptEncryptionMode').value
+                    switch (selectedIndexEncryptEncryptionMode) {
+                        case "2":
+                            Dastine.GetSelectedCertificate(function (event) {
+                                certificate = event.data.Result;
+                                if (certificate.length < 3) {
+                                    document.getElementById('ShowOnline5_CmsEncryptCertificate').value = "";
+                                    document.getElementById('ShowOnline5_lblEncryptResult').innerHTML = "Certificate not selected.";
+                                    document.getElementById('ShowOnline5_lblEncryptResult').style.color = "Red";
+                                    return false;
+                                }
+                                Dastine.UnicodeToBase64(document.getElementById('ShowOnline5_txtEncryptMessage').value, function (event) {
+                                    let b64Message = event.data.Result;
+                                    encryptMessage(certificate, b64Message);
+                                    document.getElementById('ShowOnline5_CmsEncryptCertificate').value = certificate;
+                                });
+                            });
+                            break;
+                    }
+                } else {
+                    if (Dastine.errorMessage == 'DASTINE_HOST_NOT_INSTALLED')
+                        alert(Dastine.errorMessage + '\n Get it from:\n' + DastineConfig.hostDownloadLink);
+                    else
+                        alert(Dastine.errorMessage);
+                }
+                RestoreState();
+            }
+
+            function SetControlesEnabledState() {
+                let checkedKeyUsages = document.getElementById('chkSelectCertificateKeyUsages').checked;
+                if (checkedKeyUsages)
+                    document.getElementById('optSelectCertificateKeyUsages').disabled = false;
+                else {
+                    document.getElementById('optSelectCertificateKeyUsages').disabled = true;
+                }
+                let checkedIssuer = document.getElementById('chkSelectCertificateIssuer').checked;
+                if (checkedIssuer) {
+                    document.getElementById('txtSelectCertificateIssuer').disabled = false;
+                    document.getElementById('txtSelectCertificateIssuer').value = "";
+                } else {
+                    document.getElementById('txtSelectCertificateIssuer').value = "IssuerDN";
+                    document.getElementById('txtSelectCertificateIssuer').disabled = true;
+                }
+                let selectedIndexSelectingMode = document.getElementById('txtSelectCertificateSelectingMode').value
+                if (selectedIndexSelectingMode == "1") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').disabled = true;
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').value = "SubjectDN";
+
+                } else if (selectedIndexSelectingMode == "2") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateSubject').disabled = false;
+
+                }
+                let selectedIndexCertificateStore = document.getElementById('txtSelectCertificateCertificateStore').value
+
+                if (selectedIndexCertificateStore == "1" || selectedIndexCertificateStore == "2") {
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').disabled = true;
+                    document.getElementById('ShowOnline5_FileUpload1').disabled = true;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').value = "Password";
+
+                } else if (selectedIndexCertificateStore == "3") {
+                    document.getElementById('ShowOnline5_FileUpload1').disabled = false;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').disabled = false;
+                    document.getElementById('ShowOnline5_txtSelectCertificateFilePassword').value = "";
+
+                }
+
+                let selectedIndexSigningMode = document.getElementById('drpSignSigningMode').value;
+                if (selectedIndexSigningMode == "1") {
+                    document.getElementById('drpSignMessageAttachment').disabled = true;
+                } else if (selectedIndexSigningMode == "2") {
+                    document.getElementById('drpSignMessageAttachment').disabled = false;
+                }
+                document.getElementById('ShowOnline5_txtSelectCertificate').disabled = true;
+            }
+
+            function SaveState() {
+
+                let selectedIndexCertificateStore = document.getElementById('txtSelectCertificateCertificateStore').value;
+
+                let selectedIndexSelectingMode = document.getElementById('txtSelectCertificateSelectingMode').value;
+
+                let selectedIndexSignSigningMode = document.getElementById('drpSignSigningMode').value;
+
+                let selectedIndexSignHashAlgorithm = document.getElementById('drpSignHashAlgorithm').value;
+
+                let selectedIndexSignMessageAttachment = document.getElementById('drpSignMessageAttachment').value;
+
+                let selectedIndexEncryptEncryptionMode = document.getElementById('drpEncryptEncryptionMode').value;
+
+                let checkedKeyUsages = document.getElementById('chkSelectCertificateKeyUsages').checked;
+                let checkedIssuer = document.getElementById('chkSelectCertificateIssuer').checked;
+
+
+                let optSelectCertificateKeyUsages = document.getElementById('optSelectCertificateKeyUsages');
+                let textSelectCertificateKeyUsages = "";
+                if (optSelectCertificateKeyUsages != null)
+                    for (i = 0; i < optSelectCertificateKeyUsages.options.length; i++) {
+                        let opt = optSelectCertificateKeyUsages.options[i];
+                        if (opt.selected) {
+                            textSelectCertificateKeyUsages += opt.value;
+                            textSelectCertificateKeyUsages += " ";
+                        }
+                    }
+                document.getElementById('ShowOnline5_hdnStateHolder').value = selectedIndexCertificateStore + "&" + selectedIndexSelectingMode + "&" + selectedIndexSignSigningMode + "&" + selectedIndexSignHashAlgorithm + "&" + selectedIndexSignMessageAttachment + "&" + selectedIndexEncryptEncryptionMode + "&" + checkedKeyUsages + "&" + checkedIssuer + "&" + textSelectCertificateKeyUsages;
+            }
+
+            function RestoreState() {
+                if (document.getElementById('ShowOnline5_hdnStateHolder').value != "") {
+                    let State = document.getElementById('ShowOnline5_hdnStateHolder').value.split("&");
+                    let selectedIndexCertificateStore = State[0];
+                    let selectedIndexSelectingMode = State[1];
+                    let selectedIndexSignSigningMode = State[2];
+                    let selectedIndexSignHashAlgorithm = State[3];
+                    let selectedIndexSignMessageAttachment = State[4];
+                    let selectedIndexEncryptEncryptionMode = State[5];
+                    let checkedKeyUsages = State[6];
+                    let checkedIssuer = State[7];
+                    let SelectCertificateKeyUsages = State[8];
+                    let keyusages = SelectCertificateKeyUsages.split(" ");
+
+                    document.getElementById('txtSelectCertificateCertificateStore').value = selectedIndexCertificateStore;
+
+                    document.getElementById('txtSelectCertificateSelectingMode').value = selectedIndexSelectingMode;
+
+                    document.getElementById('drpSignSigningMode').value = selectedIndexSignSigningMode;
+
+                    document.getElementById('drpSignHashAlgorithm').value = selectedIndexSignHashAlgorithm;
+
+                    document.getElementById('drpSignMessageAttachment').value = selectedIndexSignMessageAttachment;
+
+                    document.getElementById('drpEncryptEncryptionMode').value = selectedIndexEncryptEncryptionMode;
+
+                    if (checkedKeyUsages == "true") {
+                        document.getElementById('chkSelectCertificateKeyUsages').checked = 1;
+                        document.getElementById('optSelectCertificateKeyUsages').disabled = false;
+                    } else {
+                        document.getElementById('chkSelectCertificateKeyUsages').checked = 0;
+                        document.getElementById('optSelectCertificateKeyUsages').disabled = true;
+                    }
+                    if (checkedIssuer == "true") {
+                        document.getElementById('txtSelectCertificateIssuer').disabled = false;
+                        document.getElementById('chkSelectCertificateIssuer').checked = 1;
+                    } else {
+                        document.getElementById('txtSelectCertificateIssuer').disabled = true;
+                        document.getElementById('chkSelectCertificateIssuer').checked = 0;
+                    }
+                    let optSelectCertificateKeyUsages = document.getElementById('optSelectCertificateKeyUsages');
+                    if (optSelectCertificateKeyUsages != null)
+                        for (i = 0; i < optSelectCertificateKeyUsages.options.length; i++) {
+                            let opt = optSelectCertificateKeyUsages.options[i];
+                            for (j = 0; j < keyusages.length; j++)
+                                if (keyusages[j] == opt.value)
+                                    opt.selected = true;
+                        }
+                }
+            }
+
+            RestoreState();
+            SetControlesEnabledState();
+        </script>
+        <script type="text/javascript">
+
+            function myupdate() {
+
+            /*if (Dastine.isInstalled) {
+                try {
+                    Dastine.CheckUpdate(function (event) {
+                        let state = event.data.Result;
+                        if (state == 119) // downloading version
+                            setTimeout(myupdate, 5000);
+                        else if(state==115)  // downloading dastine
+                            setTimeout(myupdate, 5000);
+                        else if (state == 116)  // download finished
+                        {
+                            try {
+                                Dastine.InstallUpdate(function (event) {
+                                    window.alert("Dastine is updating");
+                                });
+                            }
+                            catch (e) {
+                                alert(e);
+                            }
+                        }
+
+                    });
+                }
+                catch (e) {
+                    alert(e);
+                }
+            }*/
+        }
+            //setTimeout(myupdate, 5000)
+
+
+        </script>
+
+
+    </div>
+</form>
+</body>
+</html>
